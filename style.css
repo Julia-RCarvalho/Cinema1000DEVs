@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+body{
+    background-color: #0f172c;
+    color: white;
+}
+
+
+.container {
+  max-width: 1100px;        /* limita a largura do conteúdo */
+  margin: 0 auto;           /* centraliza na tela */
+  padding: 20px;
+  flex: 1;                   /*   */
+}
+
+
+.hero {
+    text-align: center;
+    margin: 40px 0 20px 0;
+}
+
+
+.hero h2 {
+    font-size: 2rem;
+}
+
+
+.hero p {
+    color: #a0aec0; /* Deixa o parágrafo um tom cinza mais suave */
+}
+
+
+.movie-grid {
+  display: flex;            /*  caixas lado a lado */
+  justify-content: center;  /* para centralizar as caixas na tela */
+  gap: 20px;                /* espaço entre as caixas */
+  padding: 20px;            /*espaço interno nas bordas da tela */
+  width: 100%;              /* usa toda largura*/
+}
+
+
+.movie-card {
+  background-color: #1e1e24;  /* cor de fundo para dar o efeito de "caixa" na imagem*/
+  border: 1px solid #333;    /* borda pra delimitar a caixa */
+  border-radius: 8px;        /* da aquela arredondada */
+  overflow: hidden;          /* limita  a imagem na caixa */
+  max-width: 320px;          /* largura máxima padrão para cada caixa */
+ 
+  /* Sombra destacar a caixa */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+
+   /* Faz a animação ser suave ao entrar e sair com o mouse */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  cursor: pointer; /* Mostra a mãozinha de clique */
+}
+
+
+/* Efeito ao passar o mouse por cima do card */
+.movie-card:hover {
+  transform: translateY(-10px) scale(1.03); /* Sobe 10px e aumenta levemente */
+  box-shadow: 0 12px 24px rgba(0, 81, 157, 0.4); /* Sombra azulada mais forte */
+  border-color: #00519d; /* Destaca a borda na cor da marca */
+}
+
+
+.movie-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.movie-info {
+  padding: 12px;             /* espaço do texto dentro do card */
+}
+
+
+/* Detalhes do filme */
+.movie-detail {
+  display: flex;            /* pôster de um lado, texto do outro */
+  gap: 30px;                /* espaço entre pôster e texto */
+  padding: 30px 0;
+}
+
+.movie-detail h1{
+    color: red;
+}
+
+.o_codigo{
+    background-color: #1e1e24;  /* cor de fundo para dar o efeito de "caixa" na imagem*/
+    border: 1px solid #333;    /* borda pra delimitar a caixa */
+    border-radius: 8px;        /* da aquela arredondada */
+    overflow: hidden;          /* limita  a imagem na caixa */
+    max-width: 320px;
+    padding: 30px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.movie-poster {
+  width: 320px;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+
+.movie-text h2 {
+  color: #00519d;           /* título do filme na cor da marca */
+  margin-bottom: 15px;
+}
+
+
+.movie-text h3,
+.movie-text p {
+  margin-top: 15px;
+  line-height: 1.7;         /* melhora a leitura da sinopse */
+}
+
+.btn-back {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 10px 18px;
+  background-color: #00519d;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.btn-trailer {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 10px 18px;
+  background-color: #df0000;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.btn-back:hover,
+.btn-trailer:hover{
+  transform: translateY(-10px) scale(1.03); /* Sobe 10px e aumenta levemente */
+  box-shadow: 0 12px 24px rgba(0, 81, 157, 0.4); /* Sombra azulada mais forte */
+  border-color: #00519d; /* Destaca a borda na cor da marca */
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 3px 8px rgba(1, 1, 1, 0.311);
+}
+
+
+header h1{
+    color: #00519d;
+}
+
+
+#devs{
+    color: red;
+}
+
+
+#devs :hover{
+    color: white;
+}
+
+
+header a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+
+header :hover{
+    color: rgb(122, 121, 121);
+}
+
+
+footer{
+    text-align: center;
+    background-color: #1e1e1e;
+    padding: 20px;
+    color: #888888;
+    border-top: 1px solid #2a2a2a;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
