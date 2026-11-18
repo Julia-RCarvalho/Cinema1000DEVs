@@ -1,4 +1,4 @@
-Este é um projeto desenvolvido como parte dos meus primeiros passos e estudos em HTML e CSS.
+Este é um projeto desenvolvido como parte dos meus primeiros passos e estudos em HTML e CSS. Foi feito em equipe, em um desafio do bootcamp 1000DEVs - Starter.
 O objetivo principal foi praticar a estruturação de páginas web com HTML e a estilização de layouts com CSS, criando uma aplicação temática voltada para o universo do cinema.
 
 
